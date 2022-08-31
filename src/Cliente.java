@@ -1,26 +1,26 @@
 import java.util.ArrayList;
 
-public class Usuario {
+public class Cliente {
 
-    private int idUsuario;
+    private int idCliente;
     private String nome;
     private String telefone;
     private String email;
     private ArrayList<Emprestimo> emprestimos;
 
-    public Usuario(int idUsuario, String nome, String telefone, String email) {
-        this.idUsuario = idUsuario;
+    public Cliente(int idCliente, String nome, String telefone, String email) {
+        this.idCliente = idCliente;
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
     }
 
-    public int getIdUsuario() {
-        return idUsuario;
+    public int getIdCliente() {
+        return idCliente;
     }
 
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getNome() {

@@ -3,16 +3,16 @@ import java.util.Date;
 public class Emprestimo {
 
     private int idEmprestimo;
-    private Usuario usario;
+    private Cliente cliente;
     private Livro livro;
     private Date data;
     private Date dataDevolucao;
     private boolean entregue;
     private boolean atrasado;
 
-    public Emprestimo(int idEmprestimo, Usuario usario, Livro livro, Date data, Date dataDevolucao) {
+    public Emprestimo(int idEmprestimo, Cliente cliente, Livro livro, Date data, Date dataDevolucao) {
         this.idEmprestimo = idEmprestimo;
-        this.usario = usario;
+        this.cliente = cliente;
         this.livro = livro;
         this.data = data;
         this.dataDevolucao = dataDevolucao;
@@ -26,12 +26,12 @@ public class Emprestimo {
         this.idEmprestimo = idEmprestimo;
     }
 
-    public Usuario getUsario() {
-        return usario;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setUsario(Usuario usario) {
-        this.usario = usario;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public Livro getLivro() {
